@@ -27,7 +27,7 @@ def invitelink(bot,update):
 def twitter(bot,update):
         bot.sendChatAction(chat_id=update.message.chat_id, action=ChatAction.TYPING)
         sleep(0.2)
-        bot.sendMessage(chat_id=update.message.chat_id, text='https://twitter.com/pyladiesDL')
+        bot.sendMessage(chat_id=update.message.chat_id, text='https://twitter.com/PyLadiesDelhi')
 
 def github(bot,update):
         bot.sendChatAction(chat_id=update.message.chat_id, action=ChatAction.TYPING)
