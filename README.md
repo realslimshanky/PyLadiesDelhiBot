@@ -1,4 +1,5 @@
 # PyLadies-Delhi-Bot
+PyLadies Delhi Bot is a Telegram bot for sharing information about PyLadies Delhi community. This bot is the fork of [PyDelhi Bot](https://github.com/realslimshanky/PyDelhi-Bot) and development of this bot happens parallel to PyDelhi Bot apart from some patches/modifications which are community dependent.
 
 ### How To Contribute
 
@@ -6,13 +7,9 @@
 
 ### How To Deploy
 
-* Python version 3.5 was used to create the bot
-* Virtual Environment is recommended
-* A bot API key is required to be edited in pyladiesdelhibot.py which can be aquired from [BotFather](https://telegram.me/botfather), replace it with <Bot-Token> in pyladiesdelhibot.py
-* Installing dependencies
-  * run `pip install -r requirements.txt`
-    or install following packages individually
-  * [python-telegram-bot](https://pypi.python.org/pypi/python-telegram-bot)
-  * [requests](https://pypi.python.org/pypi/requests)
-  * [pytz](http://pypi.python.org/pypi/pytz)
-* And finally `python3 pyladiesdelhibot.py`
+* Install Python 3
+* Install pip for Python 3
+* Clone this repository to by running git clone https://github.com/realslimshanky/PyLadies-Delhi-Bot.git
+* Open Terminal and get inside the repository folder by running cd PyLadies-Delhi-Bot
+* Install pipenv by running pip install pipenv
+* Run the program by pipenv run python pyladiesdelhi.py and follow the instructions if mentioned.
