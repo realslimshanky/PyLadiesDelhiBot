@@ -84,6 +84,11 @@ def twitter(bot,update):
         sleep(0.2)
         bot.sendMessage(chat_id=update.message.chat_id, text='https://twitter.com/PyLadiesDelhi')
 
+def meetup(bot,update):
+        bot.sendChatAction(chat_id=update.message.chat_id, action=ChatAction.TYPING)
+        sleep(0.2)
+        bot.sendMessage(chat_id=update.message.chat_id, text='https://www.meetup.com/pyladies-delhi/')
+
 def github(bot,update):
         bot.sendChatAction(chat_id=update.message.chat_id, action=ChatAction.TYPING)
         sleep(0.2)
@@ -101,6 +106,7 @@ def help(bot, update):
 Use one of the following commands
 /invitelink - to get an invite link for PyLadies Delhi Telegram Group of Volunteers
 /twitter - to get the twitter profile link of PyLadies Delhi
+/meetup - to get the meetup page link of PyLadies Delhi
 /github - to get github profile link of PyLadies Delhi
 /email - to get email address in order to contact PyLadies Delhi
 /help - to see recursion in action ;)
@@ -111,6 +117,7 @@ To contribute to|modify this bot : https://github.com/realslimshanky/PyLadiesDel
 dispatcher.add_handler(CommandHandler('start', start, pass_args=True))
 dispatcher.add_handler(CommandHandler('invitelink', invitelink))
 dispatcher.add_handler(CommandHandler('twitter', twitter))
+dispatcher.add_handler(CommandHandler('meetup', meetup))
 dispatcher.add_handler(CommandHandler('github', github))
 dispatcher.add_handler(CommandHandler('email', email))
 dispatcher.add_handler(CommandHandler('help', help))
