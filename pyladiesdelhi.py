@@ -121,3 +121,5 @@ dispatcher.add_handler(CommandHandler('meetup', meetup))
 dispatcher.add_handler(CommandHandler('github', github))
 dispatcher.add_handler(CommandHandler('email', email))
 dispatcher.add_handler(CommandHandler('help', help))
+
+updater.start_polling()
